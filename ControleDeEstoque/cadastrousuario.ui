@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CadastroUsuario</class>
+ <widget class="QDialog" name="CadastroUsuario">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>400</width><height>270</height></rect>
+  </property>
+  <property name="windowTitle"><string>Cadastro de Usuário</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+	<item>
+	 <layout class="QHBoxLayout" name="logoHorizontalLayout">
+	  <item>
+		<spacer name="leftSpacer">
+		 <property name="orientation">
+		  <enum>Qt::Horizontal</enum>
+		 </property>
+		 <property name="sizeHint" stdset="0">
+		  <size><width>40</width><height>20</height></size>
+		 </property>
+		</spacer>
+	  </item>
+	  <item>
+		<widget class="QLabel" name="logoLabel">
+		 <property name="pixmap">
+		  <pixmap resource="resources.qrc">:/imagens/logo.png</pixmap>
+		 </property>
+		 <property name="minimumSize">
+		  <size><width>264</width><height>100</height></size>
+		 </property>
+		 <property name="maximumSize">
+		  <size><width>264</width><height>100</height></size>
+		 </property>
+		 <property name="scaledContents"><bool>true</bool></property>
+		</widget>
+	  </item>
+	  <item>
+		<spacer name="rightSpacer">
+		 <property name="orientation">
+		  <enum>Qt::Horizontal</enum>
+		 </property>
+		 <property name="sizeHint" stdset="0">
+		  <size><width>40</width><height>20</height></size>
+		 </property>
+		</spacer>
+	  </item>
+	 </layout>
+	</item>
+
+
+   <!-- TÍTULO -->
+   <item>
+    <widget class="QLabel" name="tituloLabel">
+     <property name="text"><string>Cadastrar:</string></property>
+     <property name="styleSheet">
+      <string>
+        QLabel { font-size: 20px; font-weight: bold; color: black; }
+      </string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- USUÁRIO -->
+   <item>
+    <widget class="QLabel" name="usernameLabel">
+     <property name="text"><string>Usuário</string></property>
+     <property name="styleSheet">
+      <string>
+        QLabel { font-size: 18px; font-weight: bold; color: #FF66B2; }
+      </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="usernameLineEdit">
+     <property name="styleSheet">
+      <string>
+        QLineEdit {
+          border: 2px solid #FF66B2;
+          border-radius: 10px;
+          padding: 10px;
+          font-size: 16px;
+          color: #FF66B2;
+        }
+        QLineEdit:focus {
+          border: 2px solid #FF3399;
+        }
+      </string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- SENHA -->
+   <item>
+    <widget class="QLabel" name="passwordLabel">
+     <property name="text"><string>Senha</string></property>
+     <property name="styleSheet">
+      <string>
+        QLabel { font-size: 18px; font-weight: bold; color: #FF66B2; }
+      </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="passwordLineEdit">
+     <property name="echoMode"><enum>QLineEdit::Password</enum></property>
+     <property name="styleSheet">
+      <string>
+        QLineEdit {
+          border: 2px solid #FF66B2;
+          border-radius: 10px;
+          padding: 10px;
+          font-size: 16px;
+          color: #FF66B2;
+        }
+        QLineEdit:focus {
+          border: 2px solid #FF3399;
+        }
+      </string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- BOTÃO -->
+   <item>
+    <widget class="QPushButton" name="registerButton">
+     <property name="text"><string>Cadastrar</string></property>
+     <property name="styleSheet">
+      <string>
+        QPushButton {
+          background-color: #FF66B2;
+          color: white;
+          border-radius: 15px;
+          border: 2px solid #FF3399;
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+        QPushButton:hover {
+          background-color: #FF3399;
+          border-color: #FF66B2;
+        }
+      </string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- MENSAGEM -->
+   <item>
+    <widget class="QLabel" name="messageLabel">
+     <property name="text"><string/></property>
+     <property name="styleSheet">
+      <string>
+        QLabel {
+          color: red;
+          font-size: 16px;
+          font-weight: bold;
+        }
+      </string>
+     </property>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

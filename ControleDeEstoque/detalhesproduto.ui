@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DetalhesProduto</class>
+ <widget class="QDialog" name="DetalhesProduto">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Detalhes do Produto</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="logoHorizontalLayout">
+         <item>
+               <spacer name="leftSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size><width>40</width><height>20</height></size>
+                </property>
+               </spacer>
+         </item>
+         <item>
+               <widget class="QLabel" name="logoLabel">
+                <property name="pixmap">
+                 <pixmap resource="resources.qrc">:/imagens/logo.png</pixmap>
+                </property>
+                <property name="minimumSize">
+                 <size><width>264</width><height>100</height></size>
+                </property>
+                <property name="maximumSize">
+                 <size><width>264</width><height>100</height></size>
+                </property>
+                <property name="scaledContents"><bool>true</bool></property>
+               </widget>
+         </item>
+         <item>
+               <spacer name="rightSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size><width>40</width><height>20</height></size>
+                </property>
+               </spacer>
+         </item>
+        </layout>
+       </item>
+   <item>
+    <widget class="QLabel" name="tituloLabel">
+     <property name="text">
+      <string>Detalhes do Produto</string>
+     </property>
+     <property name="styleSheet">
+      <string>font-size: 22px; font-weight: bold; color: black;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="labelAlignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_id">
+       <property name="text">
+        <string>ID:</string>
+       </property>
+       <property name="styleSheet">
+        <string>font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="valor_id">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_nome">
+       <property name="text">
+        <string>Nome:</string>
+       </property>
+       <property name="styleSheet">
+        <string>font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="valor_nome">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_grupo">
+       <property name="text">
+        <string>Grupo:</string>
+       </property>
+       <property name="styleSheet">
+        <string>font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="valor_grupo">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_marca">
+       <property name="text">
+        <string>Marca:</string>
+       </property>
+       <property name="styleSheet">
+        <string>font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="valor_marca">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_codigo">
+       <property name="text">
+        <string>Código de Barras:</string>
+       </property>
+       <property name="styleSheet">
+        <string>font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="valor_codigo">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_qtd">
+       <property name="text">
+        <string>Quantidade:</string>
+       </property>
+       <property name="styleSheet">
+        <string>font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="valor_qtd">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_preco">
+       <property name="text">
+        <string>Preço:</string>
+       </property>
+       <property name="styleSheet">
+        <string>font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="valor_preco">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_descricao">
+       <property name="text">
+        <string>Descrição:</string>
+       </property>
+       <property name="styleSheet">
+        <string>font-weight: bold;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QTextBrowser" name="valor_descricao">
+       <property name="styleSheet">
+        <string>border: 1px solid #ccc; background-color: #f9f9f9;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnOk">
+       <property name="text">
+        <string>OK</string>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string>
+         QPushButton {
+          background-color: #FF66B2;
+          color: white;
+          border-radius: 15px;
+          border: 2px solid #FF3399;
+          font-size: 16px;
+         }
+         QPushButton:hover {
+          background-color: #FF3399;
+          border-color: #FF66B2;
+         }
+        </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

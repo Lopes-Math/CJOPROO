@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MenuMainWindow</class>
+ <widget class="QMainWindow" name="MenuMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Menu Principal</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="logoHorizontalLayout">
+      <item>
+       <spacer name="leftSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="logoLabel">
+        <property name="minimumSize">
+         <size>
+          <width>264</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>264</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources.qrc">:/imagens/logo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="rightSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="tituloLabel">
+      <property name="styleSheet">
+       <string>
+        QLabel { font-size: 20px; font-weight: bold; color: black; }
+       </string>
+      </property>
+      <property name="text">
+       <string>Menu:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnCadastros">
+      <property name="styleSheet">
+       <string>
+        QPushButton {
+          background-color: #FF66B2;
+          color: white;
+          border-radius: 15px;
+          border: 2px solid #FF3399;
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+        QPushButton:hover {
+          background-color: #FF3399;
+          border-color: #FF66B2;
+        }
+       </string>
+      </property>
+      <property name="text">
+       <string>Cadastro de Produtos</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnEstoque">
+      <property name="styleSheet">
+       <string>
+        QPushButton {
+          background-color: #FF66B2;
+          color: white;
+          border-radius: 15px;
+          border: 2px solid #FF3399;
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+        QPushButton:hover {
+          background-color: #FF3399;
+          border-color: #FF66B2;
+        }
+       </string>
+      </property>
+      <property name="text">
+       <string>Controle de Estoque</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <spacer name="verticalSpacerLogout">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="btnLogout">
+      <property name="styleSheet">
+       <string>
+        QPushButton {
+          background-color: transparent; /* Fundo transparente */
+          color: red; /* Letras vermelhas */
+          border-radius: 15px;
+          border: 2px solid red; /* Bordas vermelhas */
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+        QPushButton:hover {
+          background-color: red; /* Fundo vermelho ao passar o mouse */
+          color: white; /* Letras brancas ao passar o mouse */
+          border: 2px solid red; /* Bordas continuam vermelhas, mas se misturam com o fundo */
+        }
+       </string>
+      </property>
+      <property name="text">
+       <string>Logout</string>
+      </property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
